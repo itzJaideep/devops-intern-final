@@ -1,0 +1,6 @@
+1. Start Loki via Docker:
+docker run -d --name=loki -p 3100:3100 grafana/loki:2.9.2 -config.file=/etc/loki/local-config.yaml
+
+2. View logs:
+docker logs -f <container-name>
+# Or check via Loki UI at http://localhost:3100
